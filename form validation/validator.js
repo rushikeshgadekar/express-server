@@ -2,6 +2,16 @@ function printError(elemId, hintMsg) {
   document.getElementById(elemId).innerHTML = hintMsg;
 }
 
+function dom() {
+  var x = document.forms["dom"];
+  var text = "";
+  var i;
+  for (i = 0; i < x.length; i++) {
+    text = text + x.elements[i].value + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+
 function validateForm() {
   var name = document.contactForm.name.value;
   var email = document.contactForm.email.value;
@@ -70,6 +80,6 @@ function validateForm() {
       gender +
       "\n";
 
-    alert(preview);
+    // alert(preview);
   }
 }
