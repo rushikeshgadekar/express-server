@@ -7,7 +7,7 @@
     <script src="validator.js"></script>
 </head>
 <body>
-<form name="contactForm" onsubmit="return validateForm()">
+<form id="dom" name="contactForm" onsubmit="return validateForm()">
     <h2>Form Validation</h2>
     <div class="row">
         <label>Full Name</label>
@@ -34,9 +34,15 @@
         <div class="error" id="genderErr"></div>
     </div>
        
-    <div >
-        <input type="submit" value="Submit">
-    </div>
+    
 </form>
+<!-- <button onclick="dom()">Check DOM operation</button> -->
+<div class="btn">
+    <input onclick="dom()" type="submit" value="Submit">
+</div>
+<div id='demo'>
+
+</div>
+
 </body>
 </html>
